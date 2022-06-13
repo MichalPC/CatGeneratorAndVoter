@@ -1,5 +1,5 @@
 import './ImageGen.css';
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 async function getImg() {
   const url = 'https://api.thecatapi.com/v1/images/search'
