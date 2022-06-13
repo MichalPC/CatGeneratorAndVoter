@@ -18,7 +18,7 @@ function ImageGen() {
   ,[])
 
   function updateImg() {
-    getImg().then(response => {
+    getImg(imgType).then(response => {
       setImgLink(response[0].url)
     })
   }
