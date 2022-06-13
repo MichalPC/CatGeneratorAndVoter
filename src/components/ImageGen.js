@@ -20,9 +20,7 @@ function ImageGen() {
   const [imgType, setImgType] = useState("");
 
   useEffect(() =>
-    getImg().then(response => {
-      setImgLink(response[0].url)
-    })
+    updateImg()
   ,[])
 
   function updateImg() {
