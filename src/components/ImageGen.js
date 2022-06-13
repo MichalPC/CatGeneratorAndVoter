@@ -25,6 +25,7 @@ function ImageGen() {
     <div className="ImageGen">
       <div className="main">
         <img src={imgLink} />
+        <button type="button">Next Cat</button> 
       </div>
     </div>
   );
