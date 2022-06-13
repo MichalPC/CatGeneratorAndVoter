@@ -17,6 +17,7 @@ async function getImg() {
 
 function ImageGen() {
   const [imgLink, setImgLink] = useState("");
+  const [imgType, setImgType] = useState("");
 
   useEffect(() =>
     getImg().then(response => {
