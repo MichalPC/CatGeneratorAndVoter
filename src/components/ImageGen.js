@@ -32,7 +32,7 @@ function ImageGen() {
 
   return (
     <div className="ImageGen">
-      <div className="main">
+      <div className="main-img-container">
         <img className="image-container" src={imgLink} />
         <button type="button" onClick={updateImg}>Next Cat</button>
       </div>
