@@ -1,16 +1,12 @@
 import './ImageGen.css';
 import { useState, useEffect } from "react";
+import axios from 'axios';
 
 async function getImg() {
-  const url = 'https://api.thecatapi.com/v1/images/search'
-  const response = await fetch(url, {
-    method: 'GET',
-    headers: {
-      'x-api-key': process.env.REACT_APP_CAT_API_KEY
-    }
-  });
+  axios.defaults.headers.common['x-api-key'] = process.env.REACT_APP_CAT_API_KEY
+  let response = await axios.get('https://api.thecatapi.com/v1/images/search', { params: { limit:1, size:"full" } } )
 
-  return response.json();
+  return response.data;
 }
 
 
