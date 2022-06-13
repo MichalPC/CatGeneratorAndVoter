@@ -24,7 +24,7 @@ function ImageGen() {
   return (
     <div className="ImageGen">
       <div className="main">
-        <img src=imgLink />
+        <img src={imgLink} />
       </div>
     </div>
   );
