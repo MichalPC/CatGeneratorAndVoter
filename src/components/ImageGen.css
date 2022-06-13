@@ -19,7 +19,7 @@ button:hover {
   height: 500px;
 }
 
-.main {
+.main-img-container {
   display: flex;
   flex-direction: column;
   align-items: center;
