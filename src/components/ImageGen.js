@@ -24,8 +24,8 @@ function ImageGen() {
   return (
     <div className="ImageGen">
       <div className="main">
-        <img src={imgLink} />
-        <button type="button">Next Cat</button> 
+        <img className="image-container" src={imgLink} />
+        <button type="button">Next Cat</button>
       </div>
     </div>
   );
