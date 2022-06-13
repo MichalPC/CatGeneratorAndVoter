@@ -24,3 +24,9 @@ button:hover {
   flex-direction: column;
   align-items: center;
 }
+
+.img-type-radio-group {
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+}
