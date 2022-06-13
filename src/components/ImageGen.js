@@ -9,8 +9,6 @@ async function getImg() {
   return response.data;
 }
 
-
-
 function ImageGen() {
   const [imgLink, setImgLink] = useState("");
   const [imgType, setImgType] = useState("");
