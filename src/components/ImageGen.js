@@ -28,6 +28,20 @@ function ImageGen() {
       <div className="main-img-container">
         <img className="image-container" src={imgLink} />
         <div className="image-ui">
+          <div className="img-type-radio-group">
+            <div>
+              <input type="radio" name="imgTypeRadio"/>
+              <label>Gifs</label>
+            </div>
+            <div>
+              <input type="radio" name="imgTypeRadio"/>
+              <label>Static</label>
+            </div>
+            <div>
+              <input type="radio" name="imgTypeRadio"/>
+              <label>All</label>
+            </div>
+          </div>
           <button type="button" onClick={updateImg}>Next Cat</button>
         </div>
       </div>
