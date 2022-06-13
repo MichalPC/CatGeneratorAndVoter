@@ -34,7 +34,9 @@ function ImageGen() {
     <div className="ImageGen">
       <div className="main-img-container">
         <img className="image-container" src={imgLink} />
-        <button type="button" onClick={updateImg}>Next Cat</button>
+        <div className="image-ui">
+          <button type="button" onClick={updateImg}>Next Cat</button>
+        </div>
       </div>
     </div>
   );
