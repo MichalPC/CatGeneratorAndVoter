@@ -7,6 +7,7 @@ function ImageGen() {
   return (
     <div className="ImageGen">
       <div className="main">
+        <img src=imgLink />
       </div>
     </div>
   );
