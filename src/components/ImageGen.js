@@ -12,6 +12,7 @@ async function getImg(imgType = "") {
 function ImageGen() {
   const [imgLink, setImgLink] = useState("");
   const [imgType, setImgType] = useState("");
+  const [imgId, setImgId] = useState("");
 
   useEffect(() =>
     updateImg()
@@ -21,6 +22,7 @@ function ImageGen() {
   function updateImg() {
     getImg(imgType).then(response => {
       setImgLink(response[0].url)
+      setImgId(response[0].id)
     })
   }
 
