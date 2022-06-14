@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import './Header.css';
 
 function Header() {
@@ -5,8 +6,8 @@ function Header() {
     <div className="Header">
       <h1> Cat API App </h1>
       <div className="nav-bar">
-        <a href='#'> Home </a>
-        <a href='#'> Random Image </a>
+        <Link to="/">Home</Link>
+        <Link to="/random">Random Image</Link>
       </div>
     </div>
   );
