@@ -19,6 +19,10 @@ function ImageGen() {
 
   ,[])
 
+  useEffect(() =>
+    defaultRadioRef.current.checked = true
+  ,[defaultRadioRef])
+
   function updateImg() {
     getImg(imgType).then(response => {
       setImgLink(response[0].url)
