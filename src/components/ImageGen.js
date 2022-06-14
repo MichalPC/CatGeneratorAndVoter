@@ -13,6 +13,7 @@ function ImageGen() {
   const [imgLink, setImgLink] = useState("");
   const [imgType, setImgType] = useState("");
   const [imgId, setImgId] = useState("");
+  const [imgVote, setImgVote] = useState({imgVoteId: "", imgVoteValue:-1})
 
   useEffect(() =>
     updateImg()
@@ -36,6 +37,11 @@ function ImageGen() {
       value: 0
     }
     let response = await axios.post('https://api.thecatapi.com/v1/votes', body)
+    setImgVote(() => ({
+      imgVoteId: response.data.id,
+      imgVoteValue: 0
+    }))
+    console.log(imgVote)
   }
 
   const likeVote = async () => {
@@ -44,6 +50,13 @@ function ImageGen() {
       value: 1
     }
     let response = await axios.post('https://api.thecatapi.com/v1/votes', body)
+    console.log(response.data)
+    console.log(imgVote)
+
+    setImgVote(() => ({
+      imgVoteId: response.data.id,
+      imgVoteValue: 1
+    }))
   }
 
   return (
