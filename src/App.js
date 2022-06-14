@@ -9,7 +9,8 @@ function App() {
       <Header/>
       <div className="main">
         <Routes>
-          <Route path="/" element={< Home/ >} />
+          <Route path="/" element={<h1> Welcome to my website! </h1>} />
+          <Route path="/random" element={< Home/ >} />
         </Routes>
       </div>
     </div>
