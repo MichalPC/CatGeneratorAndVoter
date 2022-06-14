@@ -23,6 +23,10 @@ function ImageGen() {
     })
   }
 
+  const imgTypeChanged = (e) => {
+    setImgType(e.target.value)
+  }
+
   return (
     <div className="ImageGen">
       <div className="main-img-container">
