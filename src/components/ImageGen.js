@@ -33,21 +33,27 @@ function ImageGen() {
       <div className="main-img-container">
         <img className="image-container" src={imgLink} />
         <div className="image-ui">
-          <div className="img-type-radio-group">
-            <div>
-              <input type="radio" name="imgTypeRadio" onChange={imgTypeChanged} checked={imgType === 'gif'} value="gif"/>
-              <label>Gifs</label>
-            </div>
-            <div>
-              <input type="radio" name="imgTypeRadio" onChange={imgTypeChanged} checked={imgType === 'jpg,png'} value="jpg,png"/>
-              <label>Static</label>
-            </div>
-            <div>
-              <input type="radio" name="imgTypeRadio" onChange={imgTypeChanged} checked={imgType === ''} value=""/>
-              <label>All</label>
-            </div>
+          <div className="img-ui-top">
+            <button className="like-button"> Like </button>
+            <button className="dislike-button"> Dislike </button>
           </div>
-          <button type="button" onClick={updateImg}>Next Cat</button>
+          <div className="img-ui-bot">
+            <div className="img-type-radio-group">
+              <div>
+                <input type="radio" name="imgTypeRadio" onChange={imgTypeChanged} checked={imgType === 'gif'} value="gif"/>
+                <label>Gifs</label>
+              </div>
+              <div>
+                <input type="radio" name="imgTypeRadio" onChange={imgTypeChanged} checked={imgType === 'jpg,png'} value="jpg,png"/>
+                <label>Static</label>
+              </div>
+              <div>
+                <input type="radio" name="imgTypeRadio" onChange={imgTypeChanged} checked={imgType === ''} value=""/>
+                <label>All</label>
+              </div>
+            </div>
+            <button type="button" onClick={updateImg}>Next Cat</button>
+          </div>
         </div>
       </div>
     </div>
