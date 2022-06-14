@@ -43,7 +43,7 @@ function ImageGen() {
               <label>Static</label>
             </div>
             <div>
-              <input type="radio" name="imgTypeRadio" onChange={imgTypeChanged} value="" checked/>
+              <input type="radio" name="imgTypeRadio" onChange={imgTypeChanged} value=""/>
               <label>All</label>
             </div>
           </div>
