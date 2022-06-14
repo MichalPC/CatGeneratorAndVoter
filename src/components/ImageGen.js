@@ -52,8 +52,8 @@ function ImageGen() {
         <img className="image-container" src={imgLink} />
         <div className="image-ui">
           <div className="img-ui-top">
-            <button className="like-button"> Like </button>
-            <button className="dislike-button"> Dislike </button>
+            <button className="like-button" onClick={likeVote}> Like </button>
+            <button className="dislike-button" onClick={dislikeVote}> Dislike </button>
           </div>
           <div className="img-ui-bot">
             <div className="img-type-radio-group">
