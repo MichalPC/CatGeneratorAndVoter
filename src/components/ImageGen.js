@@ -34,15 +34,15 @@ function ImageGen() {
         <div className="image-ui">
           <div className="img-type-radio-group">
             <div>
-              <input type="radio" name="imgTypeRadio"/>
+              <input type="radio" name="imgTypeRadio" value="gif"/>
               <label>Gifs</label>
             </div>
             <div>
-              <input type="radio" name="imgTypeRadio"/>
+              <input type="radio" name="imgTypeRadio" value="jpg,png"/>
               <label>Static</label>
             </div>
             <div>
-              <input type="radio" name="imgTypeRadio"/>
+              <input type="radio" name="imgTypeRadio" value=""/>
               <label>All</label>
             </div>
           </div>
