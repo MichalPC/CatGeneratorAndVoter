@@ -15,6 +15,7 @@ function ImageGen() {
 
   useEffect(() =>
     updateImg()
+
   ,[])
 
   function updateImg() {
@@ -42,7 +43,7 @@ function ImageGen() {
               <label>Static</label>
             </div>
             <div>
-              <input type="radio" name="imgTypeRadio" onChange={imgTypeChanged} value=""/>
+              <input type="radio" name="imgTypeRadio" onChange={imgTypeChanged} value="" checked/>
               <label>All</label>
             </div>
           </div>
