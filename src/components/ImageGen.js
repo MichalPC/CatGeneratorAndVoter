@@ -52,7 +52,7 @@ function ImageGen() {
                 <label>All</label>
               </div>
             </div>
-            <button type="button" onClick={updateImg}>Next Cat</button>
+            <button className="next-cat-button" type="button" onClick={updateImg}>Next Cat</button>
           </div>
         </div>
       </div>
