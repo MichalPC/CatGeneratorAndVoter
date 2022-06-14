@@ -38,6 +38,14 @@ function ImageGen() {
     let response = await axios.post('https://api.thecatapi.com/v1/votes', body)
   }
 
+  const likeVote = async () => {
+    let body = {
+      image_id: imgId,
+      value: 1
+    }
+    let response = await axios.post('https://api.thecatapi.com/v1/votes', body)
+  }
+
   return (
     <div className="ImageGen">
       <div className="main-img-container">
