@@ -1,5 +1,5 @@
 import './ImageGen.css';
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import axios from 'axios';
 
 async function getImg(imgType = "") {
@@ -12,6 +12,7 @@ async function getImg(imgType = "") {
 function ImageGen() {
   const [imgLink, setImgLink] = useState("");
   const [imgType, setImgType] = useState("");
+  const defaultRadioRef = useRef(null);
 
   useEffect(() =>
     updateImg()
@@ -43,7 +44,7 @@ function ImageGen() {
               <label>Static</label>
             </div>
             <div>
-              <input type="radio" name="imgTypeRadio" onChange={imgTypeChanged} value=""/>
+              <input type="radio" name="imgTypeRadio" onChange={imgTypeChanged} ref={defaultRadioRef} value=""/>
               <label>All</label>
             </div>
           </div>
